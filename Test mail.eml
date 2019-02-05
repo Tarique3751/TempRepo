@@ -1,0 +1,54 @@
+From: krishnanunni vs <cognizanttest2019@gmail.com>
+To: cognizanttest2019@gmail.com
+Message-ID: <756941586.2.1549374031410.JavaMail.ubuntu@ip-172-31-94-5>
+Subject: Test mail
+MIME-Version: 1.0
+Content-Type: multipart/MIXED; boundary=00000000000042f712058125bec7
+
+--00000000000042f712058125bec7
+Content-Type: multipart/alternative; boundary="00000000000042f70e058125bec5"
+
+--00000000000042f70e058125bec5
+Content-Type: text/plain; charset="UTF-8"
+
+Hi,
+This is a test mail.
+Thanks
+
+--00000000000042f70e058125bec5
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">Hi,<div>This is a test mail.</div><div>Thanks</div></div>
+
+--00000000000042f70e058125bec5--
+--00000000000042f712058125bec7
+Content-Type: text/xml; charset="US-ASCII"; name="pom.xml"
+Content-Disposition: attachment; filename="pom.xml"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_jrrt8dtt0
+Content-ID: <f_jrrt8dtt0>
+
+PHByb2plY3QgeG1sbnM9Imh0dHA6Ly9tYXZlbi5hcGFjaGUub3JnL1BPTS80LjAuMCIgeG1sbnM6
+eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIKICB4c2k6c2No
+ZW1hTG9jYXRpb249Imh0dHA6Ly9tYXZlbi5hcGFjaGUub3JnL1BPTS80LjAuMCBodHRwOi8vbWF2
+ZW4uYXBhY2hlLm9yZy94c2QvbWF2ZW4tNC4wLjAueHNkIj4KICA8bW9kZWxWZXJzaW9uPjQuMC4w
+PC9tb2RlbFZlcnNpb24+CgogIDxncm91cElkPmNvbS5kZW1vPC9ncm91cElkPgogIDxhcnRpZmFj
+dElkPnJlY2VpdmVtYWlsPC9hcnRpZmFjdElkPgogIDx2ZXJzaW9uPjAuMC4xLVNOQVBTSE9UPC92
+ZXJzaW9uPgogIDxwYWNrYWdpbmc+amFyPC9wYWNrYWdpbmc+CgogIDxuYW1lPnJlY2VpdmVtYWls
+PC9uYW1lPgogIDx1cmw+aHR0cDovL21hdmVuLmFwYWNoZS5vcmc8L3VybD4KCiAgPHByb3BlcnRp
+ZXM+CiAgICA8cHJvamVjdC5idWlsZC5zb3VyY2VFbmNvZGluZz5VVEYtODwvcHJvamVjdC5idWls
+ZC5zb3VyY2VFbmNvZGluZz4KICA8L3Byb3BlcnRpZXM+CgogIDxkZXBlbmRlbmNpZXM+CiAgCTwh
+LS0gaHR0cHM6Ly9tdm5yZXBvc2l0b3J5LmNvbS9hcnRpZmFjdC9qYXZheC5tYWlsL21haWwgLS0+
+Cgk8ZGVwZW5kZW5jeT4KCSAgICA8Z3JvdXBJZD5qYXZheC5tYWlsPC9ncm91cElkPgoJICAgIDxh
+cnRpZmFjdElkPm1haWw8L2FydGlmYWN0SWQ+CgkgICAgPHZlcnNpb24+MS40Ljc8L3ZlcnNpb24+
+Cgk8L2RlcGVuZGVuY3k+CgkKCTwhLS0gaHR0cHM6Ly9tdm5yZXBvc2l0b3J5LmNvbS9hcnRpZmFj
+dC9qYXZheC5hY3RpdmF0aW9uL2FjdGl2YXRpb24gLS0+Cgk8ZGVwZW5kZW5jeT4KCSAgICA8Z3Jv
+dXBJZD5qYXZheC5hY3RpdmF0aW9uPC9ncm91cElkPgoJICAgIDxhcnRpZmFjdElkPmFjdGl2YXRp
+b248L2FydGlmYWN0SWQ+CgkgICAgPHZlcnNpb24+MS4xLjE8L3ZlcnNpb24+Cgk8L2RlcGVuZGVu
+Y3k+CgkKCTxkZXBlbmRlbmN5PgoJICAgIDxncm91cElkPmNoLmFzdG9ybTwvZ3JvdXBJZD4KCSAg
+ICA8YXJ0aWZhY3RJZD5qb3RsbXNnPC9hcnRpZmFjdElkPgoJICAgIDx2ZXJzaW9uPjEuMzwvdmVy
+c2lvbj4KCTwvZGVwZW5kZW5jeT4KCQogICAgPGRlcGVuZGVuY3k+CiAgICAgIDxncm91cElkPmp1
+bml0PC9ncm91cElkPgogICAgICA8YXJ0aWZhY3RJZD5qdW5pdDwvYXJ0aWZhY3RJZD4KICAgICAg
+PHZlcnNpb24+My44LjE8L3ZlcnNpb24+CiAgICAgIDxzY29wZT50ZXN0PC9zY29wZT4KICAgIDwv
+ZGVwZW5kZW5jeT4KICA8L2RlcGVuZGVuY2llcz4KPC9wcm9qZWN0Pgo=
+--00000000000042f712058125bec7--
