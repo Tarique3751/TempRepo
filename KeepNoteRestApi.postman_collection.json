@@ -1,0 +1,124 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KeepNoteRestApi",
+		"_postman_id": "c0a20466-79af-7448-ca4c-216aab9a9fed",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/user",
+			"request": {
+				"url": "localhost:8080/api/v1/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Jeff\",\n\t\"userPassword\": \"JeffPass\",\n\t\"userMobile\": \"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/5c57eae6dd0e4923ee97e25c",
+			"request": {
+				"url": "localhost:8080/api/v1/user/5c57eae6dd0e4923ee97e25c",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/5c57f392dd0e49308594ea7b",
+			"request": {
+				"url": "localhost:8080/api/v1/user/5c57f392dd0e49308594ea7b",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"5c57f392dd0e49308594ea7b\",\n    \"userName\": \"User1\",\n    \"userPassword\": \"User1PassUpdated\",\n    \"userMobile\": \"11111\",\n    \"userAddedDate\": \"2019-02-04T08:10:58.104+0000\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/5c57f392dd0e49308594ea7b",
+			"request": {
+				"url": "localhost:8080/api/v1/user/5c57f392dd0e49308594ea7b",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/v1/note",
+			"request": {
+				"url": "localhost:8082/api/v1/note",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"noteTitle\": \"testnotetitle\",\n  \"noteContent\": \"testnotecontent\",\n  \"noteStatus\": \"testnotestatus\",\n  \"category\": {\n    \"categoryName\": \"testcatname\",\n    \"categoryDescription\": \"testcatdesc\",\n    \"categoryCreatedBy\": \"jeff\"\n  },\n  \"reminders\": [\n    {\n       \"reminderName\": \"testreminder\",\n       \"reminderDescription\": \"testreminderdesc\",\n       \"reminderType\": \"testremindertype\",\n       \"reminderCreatedBy\": \"jeff\"\n    },\n    {\n       \"reminderName\": \"testreminder2\",\n       \"reminderDescription\": \"testreminderdesc2\",\n       \"reminderType\": \"testremindertype2\",\n       \"reminderCreatedBy\": \"jeff\"\n    }\n  ],\n  \"noteCreatedBy\": \"jeff\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/v1/note/jeff",
+			"request": {
+				"url": "localhost:8082/api/v1/note/jeff/0",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/v1/note/jeff/0",
+			"request": {
+				"url": "localhost:8082/api/v1/note/jeff/0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"noteTitle\": \"testnotetitleu\",\n  \"noteContent\": \"testnotecontentu\",\n  \"noteStatus\": \"testnotestatusu\",\n  \"category\": {\n    \"categoryName\": \"testcatnameu\",\n    \"categoryDescription\": \"testcatdescu\",\n    \"categoryCreatedBy\": \"jeff\"\n  },\n  \"reminders\": [\n    {\n       \"reminderName\": \"testreminderu\",\n       \"reminderDescription\": \"testreminderdescu\",\n       \"reminderType\": \"testremindertypeu\",\n       \"reminderCreatedBy\": \"jeff\"\n    },\n    {\n       \"reminderName\": \"testreminder2u\",\n       \"reminderDescription\": \"testreminderdesc2u\",\n       \"reminderType\": \"testremindertype2u\",\n       \"reminderCreatedBy\": \"jeff\"\n    }\n  ],\n  \"noteCreatedBy\": \"jeff\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
