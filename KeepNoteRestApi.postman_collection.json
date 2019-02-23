@@ -1,0 +1,415 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KeepNoteRestApi",
+		"_postman_id": "c0a20466-79af-7448-ca4c-216aab9a9fed",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/user",
+			"request": {
+				"url": "localhost:8080/api/v1/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1NjM0LCJleHAiOjE1NTA3NTU5MzR9.irioqArZyOsJfniitvwHR4JuVhxDK2XCrrZJrk9jkSQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Jeff\",\n\t\"userPassword\": \"JeffPass\",\n\t\"userMobile\": \"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/5c57eae6dd0e4923ee97e25c",
+			"request": {
+				"url": "localhost:8080/api/v1/user/5c6ea74c09330e0001fc48c1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1NjM0LCJleHAiOjE1NTA3NTU5MzR9.irioqArZyOsJfniitvwHR4JuVhxDK2XCrrZJrk9jkSQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/5c57f392dd0e49308594ea7b",
+			"request": {
+				"url": "localhost:8080/api/v1/user/5c6ea74c09330e0001fc48c1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1NjM0LCJleHAiOjE1NTA3NTU5MzR9.irioqArZyOsJfniitvwHR4JuVhxDK2XCrrZJrk9jkSQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"5c6ea74c09330e0001fc48c1\",\n    \"userName\": \"jjjjjjjjjeff\",\n    \"userPassword\": \"passssssssssssss\",\n    \"userMobile\": \"11111\",\n    \"userAddedDate\": \"2019-02-04T08:10:58.104+0000\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/user/5c57f392dd0e49308594ea7b",
+			"request": {
+				"url": "localhost:8080/api/v1/user/5c6ea74c09330e0001fc48c1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1NjM0LCJleHAiOjE1NTA3NTU5MzR9.irioqArZyOsJfniitvwHR4JuVhxDK2XCrrZJrk9jkSQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/v1/note",
+			"request": {
+				"url": "localhost:8082/api/v1/note",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1OTAxLCJleHAiOjE1NTA3NTYyMDF9.pch5OCRdJqcSvFT8DJt7mn1AWSG2gKfkkBvgU9-_I4U",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"noteTitle\": \"testnotetitle\",\n  \"noteContent\": \"testnotecontent\",\n  \"noteStatus\": \"testnotestatus\",\n  \"category\": {\n    \"categoryName\": \"testcatname\",\n    \"categoryDescription\": \"testcatdesc\",\n    \"categoryCreatedBy\": \"jeff\"\n  },\n  \"reminders\": [\n    {\n       \"reminderName\": \"testreminder\",\n       \"reminderDescription\": \"testreminderdesc\",\n       \"reminderType\": \"testremindertype\",\n       \"reminderCreatedBy\": \"jeff\"\n    },\n    {\n       \"reminderName\": \"testreminder2\",\n       \"reminderDescription\": \"testreminderdesc2\",\n       \"reminderType\": \"testremindertype2\",\n       \"reminderCreatedBy\": \"jeff\"\n    }\n  ],\n  \"noteCreatedBy\": \"jeff\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/v1/note/jeff",
+			"request": {
+				"url": "localhost:8082/api/v1/note/jeff/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1OTAxLCJleHAiOjE1NTA3NTYyMDF9.pch5OCRdJqcSvFT8DJt7mn1AWSG2gKfkkBvgU9-_I4U",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/v1/note/jeff/0",
+			"request": {
+				"url": "localhost:8082/api/v1/note/jeff/0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1OTAxLCJleHAiOjE1NTA3NTYyMDF9.pch5OCRdJqcSvFT8DJt7mn1AWSG2gKfkkBvgU9-_I4U",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"noteTitle\": \"testnotetitleu\",\n  \"noteContent\": \"testnotecontentu\",\n  \"noteStatus\": \"testnotestatusu\",\n  \"category\": {\n    \"categoryName\": \"testcatnameu\",\n    \"categoryDescription\": \"testcatdescu\",\n    \"categoryCreatedBy\": \"jeff\"\n  },\n  \"reminders\": [\n    {\n       \"reminderName\": \"testreminderu\",\n       \"reminderDescription\": \"testreminderdescu\",\n       \"reminderType\": \"testremindertypeu\",\n       \"reminderCreatedBy\": \"jeff\"\n    },\n    {\n       \"reminderName\": \"testreminder2u\",\n       \"reminderDescription\": \"testreminderdesc2u\",\n       \"reminderType\": \"testremindertype2u\",\n       \"reminderCreatedBy\": \"jeff\"\n    }\n  ],\n  \"noteCreatedBy\": \"jeff\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/api/v1/note/jeff/0",
+			"request": {
+				"url": "localhost:8082/api/v1/note/jeff/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU1OTAxLCJleHAiOjE1NTA3NTYyMDF9.pch5OCRdJqcSvFT8DJt7mn1AWSG2gKfkkBvgU9-_I4U",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083//api/v1/category",
+			"request": {
+				"url": "localhost:8083//api/v1/category",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2MTQ3LCJleHAiOjE1NTA3NTY0NDd9.KtorvFiga_sSCNgEyobRzaNki1e4of_LE2osbMCCe6U",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"categoryName\": \"testcat\",\n\t\"categoryDescription\": \"testcatdes\",\n\t\"categoryCreatedBy\": \"jeff\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083//api/v1/category/5c6aaeea4679ae595de65fd3",
+			"request": {
+				"url": "localhost:8083//api/v1/category/5c6ea94809330e00011c7866",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2MTQ3LCJleHAiOjE1NTA3NTY0NDd9.KtorvFiga_sSCNgEyobRzaNki1e4of_LE2osbMCCe6U",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083//api/v1/category/5c6ab13e4679ae5bbf78e97c",
+			"request": {
+				"url": "localhost:8083//api/v1/category/5c6ea94809330e00011c7866",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2MTQ3LCJleHAiOjE1NTA3NTY0NDd9.KtorvFiga_sSCNgEyobRzaNki1e4of_LE2osbMCCe6U",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"5c6ea94809330e00011c7866\",\n    \"categoryName\": \"testcatu\",\n    \"categoryDescription\": \"testcatdesu\",\n    \"categoryCreatedBy\": \"jeff\"\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8083//api/v1/category/5c6ab13e4679ae5bbf78e97c",
+			"request": {
+				"url": "localhost:8083//api/v1/category/5c6ea94809330e00011c7866",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2MTQ3LCJleHAiOjE1NTA3NTY0NDd9.KtorvFiga_sSCNgEyobRzaNki1e4of_LE2osbMCCe6U",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/api/v1/reminder",
+			"request": {
+				"url": "localhost:8081/api/v1/reminder",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2NTAzLCJleHAiOjE1NTA3NTY4MDN9.07xPFKE87r4jan4ZM55rg_QdZJW5HbUtFS2yt8fgCo8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"reminderName\": \"testrem\",\n\t\"reminderDescription\": \"testremdesc\",\n\t\"reminderType\": \"testremtype\",\n\t\"reminderCreatedBy\": \"jeff\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/api/v1/reminder/5c6b905a0e3564167ccf6068",
+			"request": {
+				"url": "localhost:8081/api/v1/reminder/5c6eaab109330e00013b7a0f",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2NTAzLCJleHAiOjE1NTA3NTY4MDN9.07xPFKE87r4jan4ZM55rg_QdZJW5HbUtFS2yt8fgCo8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/api/v1/reminder/5c6b905a0e3564167ccf6068",
+			"request": {
+				"url": "localhost:8081/api/v1/reminder/5c6eaab109330e00013b7a0f",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2NTAzLCJleHAiOjE1NTA3NTY4MDN9.07xPFKE87r4jan4ZM55rg_QdZJW5HbUtFS2yt8fgCo8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"reminderId\": \"5c6eaab109330e00013b7a0f\",\n\t\"reminderName\": \"testremu\",\n\t\"reminderDescription\": \"testremdescu\",\n\t\"reminderType\": \"testremtypeu\",\n\t\"reminderCreatedBy\": \"jeff\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/api/v1/reminder/",
+			"request": {
+				"url": "localhost:8081/api/v1/reminder/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/api/v1/auth/register",
+			"request": {
+				"url": "localhost:8089/api/v1/auth/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": \"jeff\",\n\t\"firstName\": \"jeffin\",\n\t\"lastName\": \"pulickal\",\n\t\"userPassword\": \"password\",\n\t\"userRole\": \"admin\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/api/v1/auth/login",
+			"request": {
+				"url": "localhost:8089/api/v1/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"jeff\",\n\t\"password\": \"password\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/api/v1/reminder/5c6eaab109330e00013b7a0f",
+			"request": {
+				"url": "localhost:8081/api/v1/reminder/5c6eaab109330e00013b7a0f",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwNzU2NTAzLCJleHAiOjE1NTA3NTY4MDN9.07xPFKE87r4jan4ZM55rg_QdZJW5HbUtFS2yt8fgCo8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/api/v1/auth/login/isAuthenticated",
+			"request": {
+				"url": "localhost:8089/api/v1/auth/login/isAuthenticated",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWZmIiwiaWF0IjoxNTUwODMxNzY0LCJleHAiOjE1NTA4MzIwNjR9.MLRyNXnMKm6d_brbuaZ-1tXHD91vmhstBBhQitlvOSk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
